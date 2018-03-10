@@ -1,0 +1,104 @@
+/*
+Theme Name: Opal
+Version:1.0
+Theme URI: http://thehappyweekend.com/
+Author: The Happy Weekend
+Author URI: http://thehappyweekend.com/
+Description: Customly made for Opal :)
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.rw-ui-container.rw-size-medium .rw-ui-info-container,
+.rw-ui-container.rw-size-medium .rw-report-link,
+.rw-ui-container.rw-size-small .rw-ui-info-container,
+.rw-ui-container.rw-size-small .rw-ui-info,
+.rw-ui-container.rw-size-small .rw-report-link{
+	display: none !important;
+	visibility: hidden !important;
+}
+
+ins {
+	text-decoration: none;
+}
+
+.inner-page .wrapper > .section{
+	padding-top: 0 !important;
+}
+
+.best-holder .text-content h4 span{
+	padding-right: 0 !important; 
+}
+
+.best-holder .text-content h4 del span.amount{
+	padding-right: 4px !important; 
+}
+
+.best-holder .text-content h4  span.amount,
+.best-holder .text-content h4  span span{
+	color: #267ea3 !important;
+    text-decoration: none !important;
+}
+
+.best-holder .text-content h4 del span.amount,
+.best-holder .text-content h4 del span span{
+	color: #e14543 !important;
+    text-decoration: line-through !important;
+}
+
+.best-holder .img-holder{
+	overflow: hidden;
+}
+
+.best-holder .text-content h3{
+	text-transform: uppercase;
+}
+
+.best-holder .img-holder .container-image-and-badge{
+	position: static !important;
+}
+
+.best-holder .img-holder .ease a.btn{
+	transition: all 0.5s ease !important;
+}
+
+.best-holder .img-holder .ease a.added_to_cart{
+	display: none;
+}
+
+form.woocommerce-ordering{
+	display: none;
+}
+
+.woocommerce table.cart img{
+	width: 62px;
+}
+
+.yith-wcbm-badge{
+	 -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    transform: rotate(-45deg);
+    top: 10px !important;
+    left: -30px !important;
+}
+
+.product-detail-page .details div.reviews-ratings{
+	display: inline-block;
+}
+
+.product-detail-page .details div.reviews-ratings span.review-label{
+	display: block;
+	float: left;
+	padding: 5px 5px 0 0;
+	font-size: 14px;
+    color: #1d1d1d;
+}
+
+.product-detail-page .details div.reviews-ratings table.rw-rating-table{
+	display: block;
+	float: left;
+}
+.product-detail-page .details div.reviews-ratings table.rw-rating-table td:last-child{
+	padding-bottom: 0 !important; 
+}
