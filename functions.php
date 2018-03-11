@@ -174,3 +174,8 @@ function iconic_cart_count_fragments( $fragments ) {
     return $fragments;
     
 }
+
+add_action( 'wp_enqueue_scripts', 'wcqi_enqueue_polyfill' );
+function wcqi_enqueue_polyfill() {
+    wp_enqueue_script( 'wcqi-number-polyfill' );
+}

@@ -21,7 +21,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 global $product;
-global $post;
 
 $productID = $product->get_id();
 
@@ -78,6 +77,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
    	do_action( 'woocommerce_shop_loop_item_title' );
    	
+   	echo do_shortcode('[yasr_overall_rating size="small"]');
+
 	/**
 	 * woocommerce_after_shop_loop_item_title hook.
 	 *

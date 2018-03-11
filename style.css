@@ -95,10 +95,97 @@ form.woocommerce-ordering{
     color: #1d1d1d;
 }
 
-.product-detail-page .details div.reviews-ratings table.rw-rating-table{
-	display: block;
-	float: left;
+.product-detail-page .details div.reviews-ratings .rateit{
+	padding-top: 4px !important;
 }
-.product-detail-page .details div.reviews-ratings table.rw-rating-table td:last-child{
-	padding-bottom: 0 !important; 
+
+.product-detail-page .details .amount,
+.product-detail-page .details .product_meta,
+.product-detail-page .details h1.product_title{
+	display:none !important;
 }
+
+.product-detail-page .details .quantity-holder{
+	max-width: 250px;
+}
+
+.product-detail-page .details .quantity-holder p.price{
+	display:none !important;
+}
+
+.product-detail-page .details .quantity-holder .qty{
+	max-width: 250px;
+}
+.product-detail-page .details .quantity-holder .qty input.minus,
+.product-detail-page .details .quantity-holder .qty input.plus{
+	background-color: #ffffff;
+	border: 1px solid #f2f2f2;
+	color:#d9d9d9;
+	padding: 0;
+    font-size: 22px;
+}
+
+.product-detail-page .details .quantity-holder .qty input.input-text{
+	text-align: center;
+}
+
+.product-detail-page .details .quantity-holder .qty .single_add_to_cart_button.button{
+    width: 100px;
+    background-color: #00a3dd;
+    color: #FFF;
+    text-transform: uppercase;
+	border-radius: 3px;	
+}
+
+.cart-page .img-container a.del-btn{
+	display: inline-block !important;
+	color: #ed7e74 !important;
+	font-size: 20px !important;
+    font-weight: 800;
+}
+
+.best-sellers .cart-page .img-container{
+	max-width: 190px;
+}
+
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.minus{
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.plus{
+	border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.minus,
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.plus{
+	position: static;
+	display: inline-block;
+	width: 36px;
+	height: 35px;
+	border: 1px solid #f2f2f2;
+	background: #FFF;
+}
+
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.minus:hover,
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.plus:hover{
+	border: 1px solid #e5493a;
+    color: #e5493a;
+}
+
+
+.cart-page li.cart_item div.col.quantity-holder div.quantity label.screen-reader-text{
+	position: static;
+	display: none;
+}
+
+.cart-page li.cart_item div.col.quantity-holder div.quantity input.input-text.qty{
+	float:none;
+	width: 36px;
+	height: 35px;
+	border: 1px solid #f2f2f2;
+	background: #FFF;
+	text-align: center;
+}
+

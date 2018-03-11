@@ -79,7 +79,7 @@ global $product;
 						</div>
 						<h1><?php echo $brandTerms[0]->name; ?></h1>
 						<h2><?php echo get_the_title($productID); ?></h2>
-						<div class='reviews-ratings'><span class="review-label">Product Reviews</span> <?php echo do_shortcode('[ratingwidget]'); ?></div>
+						<div class='reviews-ratings'><span class="review-label">Product Reviews</span> <?php echo do_shortcode('[yasr_overall_rating size="small"]'); ?></div>
 						<h3>MSRP: <span class="before-price">$<?php echo $regularPrice; ?></span></h3>
 						<h3>Price: <span>$<?php echo $salePrice ; ?></span></h3>
 						<div class="holder">
@@ -95,15 +95,12 @@ global $product;
 							</div>
 						</div>
 						<div class="qty-holder form-holder">
-							<p>QTY:</p>
+							<p>QTY:</p>	
 							<div class="col quantity-holder">
-								<div class="qty clearfix">
-									<button type="button" name="button" class="f-left"><i class="fa fa-minus" aria-hidden="true"></i></button>
-									<input type="text" name="" value="" class="f-left">
-									<button type="button" name="button" class="f-right"><i class="fa fa-plus" aria-hidden="true"></i></button>
-								</div>
-							</div>
-							<input type="submit" name="" class="btn btn-blue btn-blue-nh" value="ADD TO CART">
+	    						<div class="qty">
+	    							<?php do_action( 'woocommerce_single_product_summary' ); ?>
+	    						</div>
+    						</div>			
 						</div>
 					</div>
 				</div>
@@ -118,3 +115,8 @@ global $product;
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('.quantity-holder .qty input.input-text').attr("type","text");
+	});
+</script>

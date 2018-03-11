@@ -2,18 +2,25 @@
 /**
 * Template Name: Cart
 */
-get_header(); 
+get_header();
+global $post;
 ?>
 <section id="main-wrapper">
   <div class="inner-banner">
     <div class="wrapper">
       <div class="breadcrumb">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="<?php echo get_site_url() ?>">Home</a></li>
+          <li><a href="#"><?php  echo strtoupper($post->post_name); ?></a></li>
         </ul>
       </div>
-      <h3>SHOPPING CART</h3>
+      <h3><?php 
+      if($post->post_name == 'cart'){
+        echo "SHOPPING CART";
+      }else{
+        echo strtoupper($post->post_title);
+      }?>
+      </h3>
     </div>
   </div>
   <div class="wrapper">
